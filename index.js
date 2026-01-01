@@ -82,3 +82,14 @@ client.on("message", async message => {
 });
 
 client.initialize();
+
+const http = require("http");
+
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("DELTA CANIS BOT ONLINE");
+}).listen(PORT, () => {
+  console.log("🌐 Servidor ativo na porta", PORT);
+});
