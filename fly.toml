@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for deltacanispy on 2026-01-01T19:31:58Z
+# fly.toml app configuration file generated for deltacanispy on 2026-01-03T15:53:19Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -9,7 +9,7 @@ primary_region = 'gru'
 [build]
 
 [http_service]
-  internal_port = 3000
+  internal_port = 8080
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
